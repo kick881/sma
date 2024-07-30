@@ -1,0 +1,54 @@
+// Helper function to add two numbers
+function add(a, b) {
+    return a + b;
+}
+
+// Helper function to subtract two numbers
+function subtract(a, b) {
+    return a - b;
+}
+
+// Helper function to multiply two numbers
+function multiply(a, b) {
+    return a * b;
+}
+
+// Helper function to divide two numbers
+function divide(a, b) {
+    if (b === 0) {
+        console.log("Error: Division by zero is not allowed.");
+        return null;
+    }
+    return a / b;
+}
+
+// Helper function to find the maximum of an array of numbers
+function findMax(arr) {
+    if (arr.length === 0) {
+        console.log("Error: Array is empty.");
+        return null;
+    }
+    return Math.max(...arr);
+}
+
+// Helper function to find the minimum of an array of numbers
+function findMin(arr) {
+    if (arr.length === 0) {
+        console.log("Error: Array is empty.");
+        return null;
+    }
+    return Math.min(...arr);
+}
+
+// Using the helper functions
+let num1 = 10;
+let num2 = 5;
+
+console.log("Add:", add(num1, num2));        // Output: Add: 15
+console.log("Subtract:", subtract(num1, num2));  // Output: Subtract: 5
+console.log("Multiply:", multiply(num1, num2));  // Output: Multiply: 50
+console.log("Divide:", divide(num1, num2));    // Output: Divide: 2
+
+let numbers = [3, 7, 2, 8, 4];
+console.log("Max:", findMax(numbers));        // Output: Max: 8
+console.log("Min:", findMin(numbers));        // Output: Min: 2
